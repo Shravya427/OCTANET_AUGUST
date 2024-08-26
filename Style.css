@@ -1,0 +1,110 @@
+/* Body Background with New Gradient */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Warm pastel gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque */
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Text shadow */
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    width: 70%;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    outline: none;
+    margin-right: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Smooth shadow */
+    background: rgba(255, 255, 255, 0.8); /* Lighter input background */
+    color: #555; /* Darker text color */
+}
+
+input[type="text"]::placeholder {
+    color: #999; /* Placeholder color */
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fd79a8; /* Vibrant pink button */
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1); /* Hover effect for button */
+    background-color: #ff7675; /* Lighter pink on hover */
+}
+
+#task-list {
+    margin-top: 20px;
+}
+
+.task-card {
+    background: rgba(255, 255, 255, 0.8); /* Transparent white card */
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.task-card:hover {
+    transform: translateY(-5px); /* Hover effect for task cards */
+    background-color: rgba(255, 255, 255, 1); /* Slightly brighter on hover */
+}
+
+.task-text {
+    font-size: 18px;
+    color: #444; /* Darker text for contrast */
+}
+
+.task-actions button {
+    background-color: #e17055; /* Bright orange delete button */
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.task-actions button:hover {
+    background-color: #ff6b6b; /* Redder hue on hover */
+}
